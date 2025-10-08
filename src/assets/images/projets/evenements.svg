@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Application de gestion d’événements">
+  <rect width="1200" height="800" fill="#00BFA6"/>
+  <rect x="240" y="180" width="720" height="440" rx="20" ry="20" fill="#ffffff"/>
+  <g stroke="#00BFA6" stroke-width="8" fill="none">
+    <rect x="280" y="220" width="640" height="120" rx="12" ry="12"/>
+    <rect x="280" y="360" width="300" height="180" rx="12" ry="12"/>
+    <rect x="620" y="360" width="300" height="180" rx="12" ry="12"/>
+  </g>
+  <text x="60" y="120" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Événements</text>
+  <text x="60" y="170" fill="#eafffa" font-family="Inter, Arial, sans-serif" font-size="24">Inscriptions • Paiement • Tickets</text>
+</svg>

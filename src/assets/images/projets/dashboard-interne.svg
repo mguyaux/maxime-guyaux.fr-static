@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Dashboard analytique interne">
+  <rect width="1200" height="800" fill="#f5f5f5"/>
+  <g transform="translate(140,160)">
+    <rect x="0" y="0" width="920" height="480" rx="20" ry="20" fill="#fff" stroke="#E0E0E0"/>
+    <rect x="40" y="40" width="280" height="180" fill="#00BFA6" opacity="0.2"/>
+    <rect x="360" y="40" width="520" height="40" fill="#E0E0E0"/>
+    <rect x="360" y="100" width="420" height="20" fill="#E0E0E0"/>
+    <rect x="40" y="260" width="840" height="200" fill="#E0E0E0"/>
+    <polyline points="40,420 180,380 320,420 460,360 600,400 740,340 880,360" fill="none" stroke="#00BFA6" stroke-width="6"/>
+  </g>
+  <text x="60" y="120" fill="#00BFA6" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Dashboard interne</text>
+  <text x="60" y="170" fill="#666" font-family="Inter, Arial, sans-serif" font-size="24">KPIs • Coûts • Revenus • Charge</text>
+</svg>

@@ -1,0 +1,82 @@
+[
+  {
+    "Titre": "TSP-Pipeline",
+    "Client final": "SNCF",
+    "Via": "Sopra Steria",
+    "DescriptionCourte": "Application centrale d’ingestion et de transformation de données télédiagnostic pour les besoins de maintenance prédictive des trains SNCF.",
+    "Description": "<p>Application d’ingestion et de transformation de données pour la maintenance des trains.</p><p>Rôle : lead technique, conception et mise en place sur AWS.</p>",
+    "Durée": "Depuis août 2024",
+    "Technologies": ["Java", "Quarkus", "Angular", "AWS", "Terraform", "Kafka", "SQS"],
+    "imageFile": "assets/images/projets/tsp-pipeline.jpg"
+  },
+  {
+    "Titre": "Egide",
+    "Client final": "EDF",
+    "Via": null,
+    "DescriptionCourte": "Refonte d'une application desktop d'aide à la décision dans le domaine de la radioprotection pour EDF R&D.",
+    "Description": "<p>Refonte d’un outil d’aide à la décision en radioprotection.</p><p>Rôle : lead technique, échanges réguliers avec le métier. Déploiement dans un environnement AWS.</p>",
+    "Durée": "1 an et 8 mois",
+    "Technologies": ["Java 21", "Spring Boot", "JHipster", "Angular 17", "TypeScript", "AWS", "Amazon ECS", "OpenID Connect (OIDC)"],
+    "imageFile": "assets/images/projets/egide.jpg"
+  },
+  {
+    "Titre": "Train Connect",
+    "Client final": "SNCF",
+    "Via": null,
+    "DescriptionCourte": "Projet de build visant à reconstruire une application centrale de communication entre les trains et le SI SNCF.",
+    "Description": "<p>Application de communication entre les trains et le SI SNCF.</p><p>Rôle : lead technique, conception et accompagnement de l’équipe.</p>",
+    "Durée": "2 an et 6 mois",
+    "Technologies": ["Java", "Spring WebFlux", "Spring Security", "Spring Cloud Config", "Kafka", "Hazelcast", "Java Réactif"],
+    "imageFile": "assets/images/projets/train-connect.jpg"
+  },
+  {
+    "Titre": "Site personnel",
+    "Client final": "Maxime Guyaux",
+    "Via": null,
+    "DescriptionCourte": "Site vitrine personnel présentant les projets, expériences et technologies maîtrisées.",
+    "Description": "<p>Site personnel simple et rapide, utilisé comme portfolio.</p><p>Thème clair/sombre et hébergement sur GitHub Pages.</p>",
+    "Durée": "Projet continu (évolution permanente)",
+    "Technologies": ["Angular", "TypeScript", "CSS", "GitHub Pages"],
+    "imageFile": "assets/images/projets/web-perso.jpg"
+  },
+  {
+    "Titre": "Outil d’initialisation de serveurs",
+    "Client final": "Flying Kiwi (interne)",
+    "Via": null,
+    "DescriptionCourte": "Application portable interne permettant de déployer automatiquement des serveurs pour les nouveaux projets.",
+    "Description": "<p>Petit outil interne pour initialiser rapidement des serveurs.</p><p>Utilise Docker, Ansible et quelques scripts.</p>",
+    "Durée": "3 semaines",
+    "Technologies": ["Docker", "Ansible", "Linux", "Bash", "Jenkins"],
+    "imageFile": "assets/images/projets/init-serveur.jpg"
+  },
+  {
+    "Titre": "Site de gestion et réservation multi-bars",
+    "Client final": "Carry Nation",
+    "Via": "Flying Kiwi",
+    "DescriptionCourte": "Site web de gestion et réservation pour plusieurs bars, intégrant pré-paiements, notifications et suivi des ateliers et événements.",
+    "Description": "<p>Développement d’un <b>site web complet</b> de gestion et de réservation pour Carry Nation :</p><ul><li>Gestion des <b>réservations multi-sites</b> et <b>pré-paiements</b></li><li>Envoi de <b>notifications</b> par e-mail et SMS</li><li>Réservation d’<b>ateliers</b>, gestion du <b>livre de cave</b>, des <b>bons cadeaux</b> et des <b>listes de non-présentation</b></li></ul><p>Mise en place d’un <b>back-office</b> avec deux vues :</p><ul><li><b>Administrateur</b> : gestion des soirées et des réservations</li><li><b>Barman</b> : suivi de l’arrivée des invités et organisation de la mise en place</li></ul>",
+    "Durée": "6 mois",
+    "Technologies": ["Java", "Angular", "PostgresSQL", "AWS", "Stripe", "Twilio", "SendGrid"],
+    "imageFile": "assets/images/projets/cocktail.jpg"
+  },
+  {
+    "Titre": "Sites web immobiliers pour deux clients internationaux",
+    "Client final": "Caribbean Habitats & Bruce International Properties",
+    "Via": null,
+    "DescriptionCourte": "Sites web de gestion et vente immobilière pour plusieurs propriétés, intégrant recherche de biens, gestion des annonces, similitude des biens, traduction automatisée et génération de PDF.",
+    "Description": "<p>Deux sites de gestion et de présentation de biens immobiliers.</p><p>Recherche, gestion des annonces, traduction et génération de PDF.</p>",
+    "Durée": "6 mois",
+    "Technologies": ["Java", "JHipster", "Angular", "PostgreSQL", "GCP"],
+    "imageFile": "assets/images/projets/immobilier.jpg"
+  },
+  {
+    "Titre": "Applications de gestion (confidentiel)",
+    "Client final": "Administration publique",
+    "Via": "Atos",
+    "DescriptionCourte": "Développement et maintenance de deux applications critiques pour un client public national, avec évolution vers une architecture microservices.",
+    "Description": "<p>Maintenance et évolutions sur deux applications publiques.</p><p>Participation au développement, modernisation progressive et accompagnement technique.</p>",
+    "Durée": "3 ans et 5 mois",
+    "Technologies": ["Java", "Spring Data", "Angular", "JavaScript", "PostgreSQL", "JHipster", "Liferay", "SOAP", "Linux", "JMeter", "JProfiler"],
+    "imageFile": "assets/images/projets/atos-public.jpg"
+  }
+]

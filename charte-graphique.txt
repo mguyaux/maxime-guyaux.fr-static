@@ -1,0 +1,131 @@
+Prompt de charte graphique pour IA générative — Maxime Guyaux
+
+Le site personnel de Maxime Guyaux, Lead Tech Fullstack, doit incarner le professionnalisme, la rigueur et l’élégance, avec une touche contemporaine issue du monde de la tech.
+L’esthétique générale est sobre, claire et fluide, privilégiant le noir et blanc avec un accent turquoise moderne.
+Le rendu doit exprimer la stabilité, la maîtrise technique et la simplicité haut de gamme.
+Le site doit être lisible, harmonieux, sans surcharge ni effet inutile.
+
+Ambiance générale
+
+Style global : minimaliste, épuré, avec beaucoup d’espace blanc et des marges généreuses.
+
+Lignes et formes : arrondies et fluides (bords doux, angles lissés, ombres subtiles).
+
+Hiérarchie visuelle : nette et structurée, avec des contrastes forts.
+
+Mood visuel : “executive tech”, à la croisée du design de Linear.app et d’un portfolio professionnel haut de gamme.
+
+Effet global : calme, précis, moderne et cohérent.
+
+Palette de couleurs
+
+Fond clair principal : #FFFFFF
+
+Fond sombre principal : #0D0D0D
+
+Texte principal clair : #000000
+
+Texte principal sombre : #FFFFFF
+
+Texte secondaire : #666666
+
+Accent principal : #00BFA6 (turquoise moderne)
+
+Accent sombre : #00A38D (pour le mode sombre et les survols)
+
+Gris clair : #F5F5F5
+
+Gris moyen : #E0E0E0
+
+Erreur / alerte douce : #E63946
+Les contrastes doivent toujours être élevés pour une lisibilité parfaite. Le turquoise sert uniquement d’accent visuel sur certains éléments interactifs.
+
+Typographies
+
+Titres (H1 à H3) : Playfair Display — élégant, serif moderne, structuré, sans excentricité.
+
+Poids : 600 à 700
+
+Interlignage : 1.2 à 1.4
+
+Taille : H1 = 48px, H2 = 32px, H3 = 24px
+
+Texte, navigation et UI : Inter — sans-serif moderne, fluide et très lisible.
+
+Poids : 400 à 600
+
+Taille : 16–18px pour le corps de texte, 14px pour les menus ou labels
+
+Couleur : noir ou blanc selon le mode (clair/sombre)
+
+L’ensemble doit évoquer une impression de rigueur et de modernité, sans dureté visuelle.
+
+Composants UI
+
+Boutons : arrondis (border-radius : 9999px).
+
+Primaire : fond turquoise #00BFA6, texte blanc, ombre légère.
+
+Hover : turquoise foncé #00A38D, effet de surélévation subtil.
+
+Secondaire : fond transparent, bord turquoise, texte turquoise.
+
+Taille : moyenne à large, padding généreux.
+
+Cartes et blocs : fond blanc ou gris clair, coins arrondis (12–16px), ombre très douce (rgba(0,0,0,0.05)).
+
+Animation : léger effet de “lift” ou “fade-in” au survol.
+
+Liens : texte turquoise avec soulignement subtil au hover.
+
+Champs de formulaire : fond gris clair, bord arrondi, focus avec liseré turquoise.
+
+Layout et proportions
+
+Largeur maximale du contenu : 1200px.
+
+Marges latérales : 8 à 12% sur desktop, 5% sur mobile.
+
+Espacement entre sections : environ 80px.
+
+Alignement central, symétrie visuelle.
+
+Barre de navigation fixe en haut, fond légèrement translucide (rgba(255,255,255,0.8) en clair, rgba(0,0,0,0.8) en sombre).
+
+Interactions et animations
+
+Transitions douces (ease-in-out, 200–300ms).
+
+Scroll fluide.
+
+Apparition progressive des éléments (fade-in ou slide-in léger).
+
+Hover sur images ou cartes : zoom subtil et ombre turquoise discrète.
+
+Mode sombre automatique : fond noir, texte blanc, accent turquoise atténué.
+
+Identité et branding
+
+Nom visible : Maxime Guyaux
+
+Titre professionnel : Lead Tech Fullstack
+
+Favicon / signature : initiales “MG” dans un cercle turquoise sur fond noir.
+
+Photo portrait professionnelle intégrée (forme ronde avec bord turquoise fin).
+
+Pas de logo complexe : la typographie et la mise en page assurent l’identité visuelle.
+
+Ton et rédactionnel
+
+Langue : français.
+
+Ton : professionnel, clair, posé et confiant.
+
+Style : phrases courtes et structurées, sans jargon excessif.
+
+Objectif : inspirer confiance, démontrer expertise et sérieux, sans prétention.
+
+Aucun élément humoristique ou décoratif inutile.
+
+Priorité à la lisibilité, à la cohérence visuelle et à l’équilibre global.
