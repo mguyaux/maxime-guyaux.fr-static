@@ -6,8 +6,7 @@
   "scripts": {
     "start": "ng serve --open",
     "build": "ng build --configuration production --base-href /maxime-guyaux.fr-static/",
-    "build:dev": "ng build",
-    "deploy": "ng deploy --base-href=/maxime-guyaux.fr-static/"
+    "build:dev": "ng build"
   },
   "dependencies": {
     "@angular/animations": "^18.2.0",
@@ -24,7 +23,6 @@
     "@angular-devkit/build-angular": "^18.2.0",
     "@angular/cli": "^18.2.0",
     "@angular/compiler-cli": "^18.2.0",
-    "typescript": "~5.5.0",
-    "angular-cli-ghpages": "^2.0.3"
+    "typescript": "~5.5.0"
   }
 }

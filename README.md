@@ -24,28 +24,25 @@ npm run build
 Le build est généré dans `dist/maxime-guyaux-fr/` avec `base-href` configuré pour GitHub Pages (`/maxime-guyaux.fr-static/`).
 
 ## Déploiement sur GitHub Pages
-Ce projet utilise `angular-cli-ghpages`.
+Le déploiement est géré par GitHub Actions.
 
-1. Assurez-vous d'avoir les droits push sur le dépôt.
-2. Déployez via:
-   ```bash
-   npm run deploy
-   ```
-   Cette commande construit l'app et publie le contenu dans la branche `gh-pages`.
-3. Dans les paramètres GitHub du dépôt: Settings → Pages
-   - Source: `Deploy from a branch`
-   - Branch: `gh-pages` / `/ (root)`
+- Un workflow est défini dans `.github/workflows/deploy-pages.yml`.
+- Il se déclenche à chaque `push` sur la branche `main` et sur déclenchement manuel.
+- Le workflow construit l'application (`npm ci && npm run build`) puis publie le dossier `dist/maxime-guyaux-fr` sur GitHub Pages.
 
-Après quelques minutes, votre site sera disponible à l'adresse:
+Configuration côté GitHub (à faire une seule fois):
+1. Allez dans Settings → Pages
+2. Build and deployment → Source: `GitHub Actions`
+
+URL de prod:
 ```
 https://<votre-utilisateur>.github.io/maxime-guyaux.fr-static/
 ```
 
 ### Astuces
-- Si vous renommez le dépôt, mettez à jour le `base-href` dans:
-  - `package.json` (scripts `build` et `deploy`)
-  - `angular.json` (section `deploy` → `baseHref` et éventuellement `assets` → `404.html`)
-- Pour un domaine personnalisé, créez un enregistrement DNS (CNAME) vers `<votre-utilisateur>.github.io` et ajoutez un fichier `CNAME` à la racine de la branche `gh-pages`.
+- Si vous renommez le dépôt ou changez l'URL du projet, mettez à jour le `base-href` dans:
+  - `package.json` (script `build`)
+- Pour un domaine personnalisé, configurez un enregistrement DNS (CNAME) vers `<votre-utilisateur>.github.io` et ajoutez un fichier `CNAME` au root de GitHub Pages via l'action (ex: étape dédiée dans le workflow si nécessaire).
 
 ## Structure minimale
 - `src/index.html`, `src/main.ts`, `src/app.component.ts` (standalone)
