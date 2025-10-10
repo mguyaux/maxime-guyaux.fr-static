@@ -82,6 +82,33 @@ import { ProjectsService, Project } from '../services/projects.service';
         <p class="muted">Chargement des projets…</p>
       </ng-template>
     </section>
+
+    <section class="section reveal formation">
+      <h2>Formation</h2>
+      <ol class="edu-timeline" aria-label="Parcours de formation">
+        <li class="edu-item">
+          <div class="edu-year">2016</div>
+          <div class="edu-content">
+            <h3>Master II Technologies de l'Information</h3>
+            <p class="edu-place">Université Lyon II</p>
+          </div>
+        </li>
+        <li class="edu-item">
+          <div class="edu-year">2014</div>
+          <div class="edu-content">
+            <h3>Licence Informatique</h3>
+            <p class="edu-place">Aix-Marseille Université</p>
+          </div>
+        </li>
+        <li class="edu-item">
+          <div class="edu-year">2008</div>
+          <div class="edu-content">
+            <h3>Baccalauréat Scientifique</h3>
+            <p class="edu-place">—</p>
+          </div>
+        </li>
+      </ol>
+    </section>
   `,
   imports: [
     RouterLink, NgIf, NgFor, AsyncPipe, SlicePipe
@@ -183,6 +210,20 @@ import { ProjectsService, Project } from '../services/projects.service';
       font-weight: 600;
     }
 
+    /* Formation section */
+    .formation { margin-top: 2rem; }
+    .formation h2 { margin: 0 0 .75rem; font-size: 32px; line-height: 1.3; }
+    .edu-timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+    .edu-item { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; align-items: start; padding: .85rem 1rem; border: 1px solid var(--gray-medium); border-radius: .75rem; background: color-mix(in srgb, var(--accent) 3%, transparent); }
+    .edu-year { font-family: 'Playfair Display', serif; font-weight: 600; color: var(--accent); font-size: 1.05rem; padding-top: .2rem; }
+    .edu-content h3 { margin: 0; font-size: 20px; line-height: 1.35; font-family: 'Playfair Display', serif; }
+    .edu-place { margin: .2rem 0 0; color: var(--text-secondary); }
+
+    @media (max-width: 540px) {
+      .edu-item { grid-template-columns: 1fr; }
+      .edu-year { padding-top: 0; }
+    }
+
     @media (max-width: 880px) {
       .cards-grid {
         grid-template-columns: 1fr 1fr;
@@ -202,6 +243,25 @@ import { ProjectsService, Project } from '../services/projects.service';
       .cards-grid {
         grid-template-columns: 1fr;
       }
+    }
+
+    /* Responsive adjustments for recent projects */
+    @media (max-width: 880px) {
+      .proj { grid-template-columns: 180px 1fr auto; }
+      .thumb { width: 180px; height: 120px; }
+      .title { font-size: 20px; }
+    }
+
+    @media (max-width: 640px) {
+      .proj { grid-template-columns: 1fr; grid-template-rows: auto auto auto; text-align: left; }
+      .thumb { width: 100%; height: auto; aspect-ratio: 16 / 10; }
+      .chevron { justify-self: end; }
+      .proj { align-items: start; }
+    }
+
+    @media (max-width: 420px) {
+      .tags li { font-size: .8rem; padding: .2rem .45rem; }
+      .meta { font-size: .95rem; }
     }
   `]
 })

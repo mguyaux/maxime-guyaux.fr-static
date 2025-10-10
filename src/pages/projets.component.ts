@@ -53,9 +53,22 @@ import { Observable } from 'rxjs';
     .card:hover .chevron { transform: translateX(2px); }
     .muted { color: var(--text-secondary); }
 
-    @media (max-width: 800px) {
-      .card { grid-template-columns: 1fr auto; }
-      .thumb { display:none; }
+    /* Responsive adjustments aligned with Presentation page */
+    @media (max-width: 880px) {
+      .card { grid-template-columns: 180px 1fr auto; }
+      .thumb { width: 180px; height: 120px; }
+      .title { font-size: 20px; }
+    }
+
+    @media (max-width: 640px) {
+      .card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; text-align: left; align-items: start; }
+      .thumb { width: 100%; height: auto; aspect-ratio: 16 / 10; display: block; }
+      .chevron { justify-self: end; }
+    }
+
+    @media (max-width: 420px) {
+      .tags li { font-size: .8rem; padding: .2rem .45rem; }
+      .meta { font-size: .95rem; }
     }
   `]
 })

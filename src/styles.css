@@ -71,6 +71,7 @@ footer { text-align: center; color: var(--text-secondary); padding: 40px 1rem; b
 }
 .top-nav .brand { font-weight: 700; font-family: 'Playfair Display', serif; }
 .top-nav .spacer { flex: 1; }
+.top-nav .nav-links { display: flex; gap: .25rem; }
 .top-nav a {
   color: var(--text);
   text-decoration: none;
@@ -80,6 +81,33 @@ footer { text-align: center; color: var(--text-secondary); padding: 40px 1rem; b
 }
 .top-nav a:hover { background: rgba(0,0,0,0.04); }
 .top-nav a.active { color: var(--accent); }
+
+/* Mobile nav */
+.hamburger { display: none; margin-left: .25rem; }
+.mobile-menu { display: none; }
+
+@media (max-width: 800px) {
+  .top-nav { padding-left: 5vw; padding-right: 5vw; }
+  .top-nav .nav-links { display: none; }
+  .top-nav .hamburger { display: inline-flex; }
+  .mobile-menu {
+    position: fixed;
+    top: 58px; /* below nav */
+    left: 0; right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: .5rem .75rem .75rem;
+    margin: 0 5vw;
+    background: var(--bg);
+    border: 1px solid var(--gray-medium);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    animation: reveal .25s ease-out both;
+  }
+  .mobile-menu a { padding: .6rem .75rem; border-radius: 10px; color: var(--text); }
+  .mobile-menu a:hover { background: rgba(0,0,0,0.04); text-decoration: none; }
+}
 
 /* Liens et boutons */
 a { color: var(--accent); text-decoration: none; text-underline-offset: 2px; }

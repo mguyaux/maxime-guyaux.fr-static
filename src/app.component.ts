@@ -7,14 +7,19 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, RouterLink, RouterLinkActive, NgIf],
   template: `
-    <nav class="top-nav">
+    <nav class="top-nav" [class.nav-open]="menuOpen">
       <a class="brand" [routerLink]="['/']">Maxime Guyaux</a>
       <div class="spacer"></div>
-      <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Présentation</a>
-      <a routerLink="/projets" routerLinkActive="active">Projets</a>
-      <a routerLink="/technologies" routerLinkActive="active">Technologies</a>
-      <a routerLink="/talks" routerLinkActive="active">Talks</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+
+      <!-- Desktop links -->
+      <div class="nav-links">
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Présentation</a>
+        <a routerLink="/projets" routerLinkActive="active" (click)="closeMenu()">Projets</a>
+        <a routerLink="/technologies" routerLinkActive="active" (click)="closeMenu()">Technologies</a>
+        <a routerLink="/talks" routerLinkActive="active" (click)="closeMenu()">Talks</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+      </div>
+
       <button class="icon-btn theme-toggle" type="button"
               (click)="toggleTheme()"
               [attr.aria-label]="isDarkMode ? 'Passer en mode clair' : 'Passer en mode sombre'"
@@ -28,6 +33,24 @@ import { NgIf } from '@angular/common';
           <path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
         </svg>
       </button>
+
+      <!-- Hamburger -->
+      <button class="icon-btn hamburger" type="button"
+              (click)="menuOpen = !menuOpen"
+              [attr.aria-expanded]="menuOpen"
+              aria-controls="mobile-menu"
+              aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+      </button>
+
+      <!-- Mobile drawer -->
+      <div id="mobile-menu" class="mobile-menu" *ngIf="menuOpen">
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Présentation</a>
+        <a routerLink="/projets" routerLinkActive="active" (click)="closeMenu()">Projets</a>
+        <a routerLink="/technologies" routerLinkActive="active" (click)="closeMenu()">Technologies</a>
+        <a routerLink="/talks" routerLinkActive="active" (click)="closeMenu()">Talks</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+      </div>
     </nav>
 
     <main>
@@ -40,22 +63,22 @@ import { NgIf } from '@angular/common';
 export class AppComponent {
   year = new Date().getFullYear();
   isDarkMode = false;
+  menuOpen = false;
 
   constructor() {
-    // Determine initial theme: saved preference or default to light
     const saved = localStorage.getItem('theme');
     if (saved === 'dark' || saved === 'light') {
       this.isDarkMode = saved === 'dark';
       this.applyTheme();
     } else {
-      // No saved preference: default to light explicitly
       this.isDarkMode = false;
       this.applyTheme();
     }
   }
 
+  closeMenu() { this.menuOpen = false; }
+
   toggleTheme(): void {
-    // Toggle explicitly between dark and light (overrides system)
     this.isDarkMode = !this.isDarkMode;
     this.applyTheme();
   }
@@ -66,7 +89,6 @@ export class AppComponent {
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
 
-    // Optionally adjust browser UI theme color for PWA/Android address bar
     const metaTheme = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement | null;
     if (metaTheme) {
       metaTheme.content = this.isDarkMode ? '#0D0D0D' : '#00BFA6';
