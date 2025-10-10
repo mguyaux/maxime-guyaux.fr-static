@@ -89,7 +89,8 @@ footer { text-align: center; color: var(--text-secondary); padding: 40px 1rem; b
 @media (max-width: 800px) {
   .top-nav { padding-left: 5vw; padding-right: 5vw; }
   .top-nav .nav-links { display: none; }
-  .top-nav .hamburger { display: inline-flex; }
+  /* Re-show hamburger on small screens; must override .icon-btn.hamburger base rule */
+  .top-nav .icon-btn.hamburger { display: inline-flex; }
   .mobile-menu {
     position: fixed;
     top: 58px; /* below nav */
@@ -226,6 +227,9 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(0,191,166,0.20);
 }
 .icon-btn svg { width: 18px; height: 18px; display: block; }
+
+/* Ensure hamburger is hidden by default on large screens (override .icon-btn) */
+.icon-btn.hamburger { display: none; }
 
 /* Explicit light theme to override system dark when user selects light */
 :root[data-theme="light"] {

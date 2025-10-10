@@ -20,7 +20,7 @@ import { ProjectsService, Project } from '../services/projects.service';
         <h2>Lead Tech Fullstack</h2>
         <div class="links">
           <a class="primary" routerLink="/contact" aria-label="Envoyer un email">Me contacter</a>
-          <a class="secondary" href="https://github.com/maximeguyaux" target="_blank" rel="noopener"
+          <a class="secondary" href="https://github.com/mguyaux" target="_blank" rel="noopener"
              aria-label="Profil GitHub">GitHub</a>
           <a class="secondary" href="https://www.linkedin.com/in/maximeguyaux" target="_blank" rel="noopener"
              aria-label="Profil LinkedIn">LinkedIn</a>
