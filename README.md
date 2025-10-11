@@ -26,7 +26,7 @@ Ouvre http://localhost:4200 avec rechargement à chaud.
 ```bash
 npm run build
 ```
-Le build est généré dans `dist/maxime-guyaux-fr/` avec `base-href` configuré pour GitHub Pages (`/maxime-guyaux.fr-static/`).
+Le build est généré dans `dist/maxime-guyaux-fr/` avec `base-href` configuré sur `/` pour un déploiement à la racine du domaine (`https://www.maxime-guyaux.fr/`).
 
 ## Déploiement sur GitHub Pages
 Le déploiement est géré par GitHub Actions.
@@ -41,7 +41,7 @@ Configuration côté GitHub (à faire une seule fois):
 
 URL de prod:
 ```
-https://<votre-utilisateur>.github.io/maxime-guyaux.fr-static/
+https://www.maxime-guyaux.fr/
 ```
 
 ### Astuces

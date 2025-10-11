@@ -5,7 +5,7 @@
   "description": "Site personnel de Maxime Guyaux - Angular (frontend uniquement)",
   "scripts": {
     "start": "ng serve --open",
-    "build": "ng build --configuration production --base-href /maxime-guyaux.fr-static/",
+    "build": "ng build --configuration production --base-href /",
     "build:dev": "ng build"
   },
   "dependencies": {
