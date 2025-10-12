@@ -27,7 +27,7 @@
     "Description": "<p>Train Connect est l’application <b>centrale de communication entre les trains et le système d’information SNCF</b>. Véritable colonne vertébrale du réseau, elle traite plusieurs téraoctets de données par jour et doit fonctionner en continu, 24h/24 et 7j/7. Un grand nombre d’applications critiques de la SNCF dépendent directement de son bon fonctionnement.</p><p>En tant que <b>lead technique</b>, j’ai participé à la <b>conception et à la supervision technique</b> de l’application, en collaboration avec plusieurs autres leads. Mon rôle incluait la <b>présentation et la validation des conceptions techniques auprès du client</b>, l’animation des échanges avec les développeurs, la <b>relecture de code</b> et la <b>résolution de problématiques complexes</b>, notamment sur l’intégration de nouveaux protocoles de communication.</p><p>Le projet a conduit à la <b>mise en production réussie des premiers flux Train Connect</b>, remplaçant progressivement l’ancien système. L’équipe, composée d’une <b>vingtaine de développeurs</b>, fonctionnait avec une forte exigence d’industrialisation, de robustesse et de fiabilité.</p>",
     "Durée": "2 ans et 6 mois",
     "Technologies": ["Java 17", "Spring Boot", "Kafka", "MongoDB", "Docker", "Kubernetes", "Jenkins", "AWS", "OpenShift", "GitLab CI"],
-    "imageFile": "assets/images/projets/trainconnect.jpg"
+    "imageFile": "assets/images/projets/train-connect.jpg"
   },
   {
     "Titre": "Site personnel",
