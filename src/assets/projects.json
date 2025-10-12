@@ -36,8 +36,8 @@
     "Titre": "Site personnel",
     "Client final": "Maxime Guyaux",
     "Via": null,
-    "DescriptionCourte": "Site vitrine personnel présentant les projets, expériences et technologies maîtrisées.",
-    "Description": "<p>Site personnel simple et rapide, utilisé comme portfolio.</p><p>Thème clair/sombre et hébergement sur GitHub Pages.</p>",
+    "DescriptionCourte": "Portfolio personnel conçu pour présenter mes projets.",
+    "Description": "<p>Site personnel simple et rapide, utilisé comme portfolio.</p><p>Thème clair/sombre et hébergement sur GitHub Pages.</p><p>Il s'agit de la troisième version de ce site web dans la recherche d'une solution simple, durable et économique.</p>",
     "Durée": "Projet continu (évolution permanente)",
     "Technologies": ["Angular", "TypeScript", "CSS", "GitHub Pages"],
     "imageFile": "assets/images/projets/web-perso.jpg"
@@ -46,8 +46,8 @@
     "Titre": "Outil d’initialisation de serveurs",
     "Client final": "Flying Kiwi (interne)",
     "Via": null,
-    "DescriptionCourte": "Application portable interne permettant de déployer automatiquement des serveurs pour les nouveaux projets.",
-    "Description": "<p>Petit outil interne pour initialiser rapidement des serveurs.</p><p>Utilise Docker, Ansible et quelques scripts.</p>",
+    "DescriptionCourte": "Outil interne d’automatisation permettant de déployer rapidement des serveurs standardisés pour les nouveaux clients de la startup.",
+    "Description": "<p>Dans le cadre de la croissance de <b>Flying Kiwi</b>, j’ai développé un <b>outil interne d’initialisation de serveurs</b> permettant de déployer rapidement des environnements homogènes pour chaque nouveau client.</p><p>Réalisé seul dans le cadre de mes fonctions d’infrastructure, il automatise la création et la configuration des serveurs à l’aide de <b>Docker</b>, <b>Ansible</b> et de <b>scripts Bash</b>. Ce projet a permis un <b>gain de temps significatif</b>, une <b>standardisation des déploiements</b> et m’a offert l’opportunité d’explorer de nouveaux outils d’automatisation.</p><p>L’outil est toujours utilisé aujourd’hui pour les nouveaux projets de la startup, bien que son usage soit devenu plus ponctuel.</p>",
     "Durée": "3 semaines",
     "Technologies": ["Docker", "Ansible", "Linux", "Bash", "Jenkins"],
     "imageFile": "assets/images/projets/init-serveur.jpg"
@@ -56,12 +56,13 @@
     "Titre": "Site de gestion et réservation multi-bars",
     "Client final": "Carry Nation",
     "Via": "Flying Kiwi",
-    "DescriptionCourte": "Site web de gestion et réservation pour plusieurs bars, intégrant pré-paiements, notifications et suivi des ateliers et événements.",
-    "Description": "<p>Développement d’un <b>site web complet</b> de gestion et de réservation pour Carry Nation :</p><ul><li>Gestion des <b>réservations multi-sites</b> et <b>pré-paiements</b></li><li>Envoi de <b>notifications</b> par e-mail et SMS</li><li>Réservation d’<b>ateliers</b>, gestion du <b>livre de cave</b>, des <b>bons cadeaux</b> et des <b>listes de non-présentation</b></li></ul><p>Mise en place d’un <b>back-office</b> avec deux vues :</p><ul><li><b>Administrateur</b> : gestion des soirées et des réservations</li><li><b>Barman</b> : suivi de l’arrivée des invités et organisation de la mise en place</li></ul>",
+    "DescriptionCourte": "Refonte complète du site de gestion et de réservation multi-bars pour le groupe Carry Nation.",
+    "Description": "<p>Projet de refonte globale du système de réservation et de gestion interne de Carry Nation, réunissant en une seule plateforme leurs anciens sites et de nouveaux services.</p><p>Le site permet la gestion des <strong>réservations multi-bars</strong>, <strong>prépaiements</strong>, <strong>bons cadeaux</strong>, <strong>ateliers</strong> et du <strong>livre de bar</strong>, ainsi que le suivi des <strong>no-shows</strong> et la communication automatique par <strong>e-mail et SMS</strong>.</p><p>J’ai assuré la majeure partie du développement, du <strong>front-end</strong> au <strong>back-end</strong>, ainsi que le <strong>design</strong> en collaboration avec le client.</p><p>Le site est <strong>en production depuis plusieurs années</strong> et utilisé quotidiennement par les équipes de Carry Nation, générant des centaines de réservations chaque jour.</p><p>Techniquement, le projet inclut la <strong>gestion de paiements et prépaiements</strong>, la <strong>génération automatique de PDF</strong> (bons cadeaux), l’<strong>envoi garanti d’e-mails via AWS</strong>, l’<strong>envoi de SMS</strong> et la gestion d’une <strong>infrastructure hybride OVH/AWS</strong>.</p>",
     "Durée": "6 mois",
-    "Technologies": ["Java", "Angular", "PostgreSQL", "AWS", "Stripe", "Twilio", "SendGrid"],
+    "Technologies": ["Angular", "TypeScript", "Node.js", "Express", "AWS", "OVH", "MySQL", "CSS"],
     "imageFile": "assets/images/projets/cocktail.jpg"
   },
+
   {
     "Titre": "Sites web immobiliers pour deux clients internationaux",
     "Client final": "Caribbean Habitats & Bruce International Properties",
