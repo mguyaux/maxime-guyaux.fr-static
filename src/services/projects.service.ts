@@ -12,6 +12,7 @@ interface ProjectRaw {
   'Durée'?: string; // e.g., "3 mois", optional for backward compatibility
   'Technologies': string[];
   imageFile: string;
+  'important'?: boolean; // new optional flag in JSON
 }
 
 // Normalized model used throughout the app (camelCase)
@@ -24,6 +25,7 @@ export interface Project {
   duree?: string | null;
   technologies: string[];
   imageFile: string;
+  important: boolean;
   slug: string;
 }
 
@@ -62,6 +64,7 @@ export class ProjectsService {
         duree: p['Durée'] ?? null,
         technologies: p['Technologies'],
         imageFile: p.imageFile,
+        important: !!p['important'],
         slug,
       };
     });

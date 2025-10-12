@@ -159,7 +159,7 @@ import { ProjectsService, Project } from '../services/projects.service';
 
     /* Recent projects list (reuse styles from Projets page) */
     .recent { display: flex; flex-direction: column; gap: 1rem; margin-top: .75rem; }
-    .proj { display: grid; grid-template-columns: 220px 1fr auto; gap: 1rem; align-items: center; padding: 1rem; border: 1px solid var(--gray-medium); border-radius: .75rem; text-decoration: none; color: inherit; background: color-mix(in srgb, var(--accent) 3%, transparent); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    .proj { display: grid; grid-template-columns: 220px 1fr auto; gap: 1rem; align-items: center; padding: 1rem; border: 1px solid var(--gray-medium); border-radius: .75rem; text-decoration: none; color: inherit; background: color-mix(in srgb, var(--accent) 3%, transparent); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background-color .2s ease; }
     .proj:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.08); border-color: color-mix(in srgb, var(--accent) 35%, var(--gray-medium)); }
     .proj:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent); }
     .thumb { width: 220px; height: 150px; object-fit: cover; border-radius: .5rem; border: 1px solid var(--gray-medium); }

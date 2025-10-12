@@ -7,7 +7,8 @@
     "Description": "<p>Projet stratégique de la SNCF visant à exploiter les données de télédiagnostic des trains pour la maintenance prédictive.</p><p>J’ai repris un projet existant dans un contexte technique et humain complexe pour le rendre fiable et industrialisé. En tant que <b>lead technique</b>, j’ai accompagné l’architecte dans la définition de l’architecture sur AWS, mis en place les <b>processus techniques</b>, introduit des <b>bonnes pratiques de développement</b> et structuré le <b>pipeline de tests et de déploiement</b>.</p><p>Résultat : passage d’un projet naissant peu testé à un projet <b>robuste, automatisé et en production</b>, utilisé à grande échelle pour la maintenance prédictive des trains.</p>",
     "Durée": "Depuis août 2024",
     "Technologies": ["Java", "Quarkus", "Angular", "AWS", "Terraform", "Kafka", "SQS"],
-    "imageFile": "assets/images/projets/tsp-pipeline.jpg"
+    "imageFile": "assets/images/projets/tsp-pipeline.jpg",
+    "important": true
   },
   {
     "Titre": "Egide",
@@ -17,7 +18,8 @@
     "Description": "<p>Refonte complète d’un ancien client lourd utilisé en centrale nucléaire, afin de le rendre accessible via une interface web moderne et intuitive.</p><p>En tant que <b>lead technique</b>, j’ai assuré la <b>responsabilité technique et le développement principal</b> du projet tout en occupant un rôle élargi : <b>analyse métier</b> auprès des utilisateurs, échanges directs avec les équipes en centrale et <b>pilotage technique</b> dans un contexte de forte autonomie.</p><p>J’ai participé à la <b>migration du cœur applicatif</b> vers une architecture moderne (Java 21, Spring Boot, Angular 17, AWS) et encadré une petite équipe de 2 à 3 développeurs. Le projet a abouti à un <b>déploiement d’une version bêta sur AWS</b> avant sa reprise par une nouvelle équipe interne.</p>",
     "Durée": "1 an et 8 mois",
     "Technologies": ["Java 21", "Spring Boot", "JHipster", "Angular 17", "TypeScript", "AWS", "Amazon ECS", "OpenID Connect (OIDC)"],
-    "imageFile": "assets/images/projets/egide.jpg"
+    "imageFile": "assets/images/projets/egide.jpg",
+    "important": true
   },
   {
     "Titre": "Train Connect",
@@ -27,7 +29,8 @@
     "Description": "<p>Train Connect est l’application <b>centrale de communication entre les trains et le système d’information SNCF</b>. Véritable colonne vertébrale du réseau, elle traite plusieurs téraoctets de données par jour et doit fonctionner en continu, 24h/24 et 7j/7. Un grand nombre d’applications critiques de la SNCF dépendent directement de son bon fonctionnement.</p><p>En tant que <b>lead technique</b>, j’ai participé à la <b>conception et à la supervision technique</b> de l’application, en collaboration avec plusieurs autres leads. Mon rôle incluait la <b>présentation et la validation des conceptions techniques auprès du client</b>, l’animation des échanges avec les développeurs, la <b>relecture de code</b> et la <b>résolution de problématiques complexes</b>, notamment sur l’intégration de nouveaux protocoles de communication.</p><p>Le projet a conduit à la <b>mise en production réussie des premiers flux Train Connect</b>, remplaçant progressivement l’ancien système. L’équipe, composée d’une <b>vingtaine de développeurs</b>, fonctionnait avec une forte exigence d’industrialisation, de robustesse et de fiabilité.</p>",
     "Durée": "2 ans et 6 mois",
     "Technologies": ["Java 17", "Spring Boot", "Kafka", "MongoDB", "Docker", "Kubernetes", "Jenkins", "AWS", "OpenShift", "GitLab CI"],
-    "imageFile": "assets/images/projets/train-connect.jpg"
+    "imageFile": "assets/images/projets/train-connect.jpg",
+    "important": true
   },
   {
     "Titre": "Site personnel",

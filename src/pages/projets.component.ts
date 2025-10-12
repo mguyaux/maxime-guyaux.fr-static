@@ -14,13 +14,13 @@ import { Observable } from 'rxjs';
 
       <div *ngIf="projects$ | async as projects; else loading">
         <div class="list">
-          <a class="card" *ngFor="let p of projects" [routerLink]="['/projet-detail', p.slug]" [attr.aria-label]="'Voir le projet ' + p.titre">
+          <a class="card" *ngFor="let p of projects" [routerLink]="['/projet-detail', p.slug]" [attr.aria-label]="'Voir le projet ' + p.titre" [class.important]="p.important">
             <img class="thumb" [src]="p.imageFile" [alt]="'Image du projet ' + p.titre" width="200" height="140" loading="lazy"/>
             <div class="content">
               <h3 class="title">{{ p.titre }}</h3>
               <p class="meta">
                 Client final : <strong>{{ p.clientFinal }}</strong>
-                <span class="via" *ngIf="p.via"> · Via {{ p.via }}</span>
+                <span class="via" *ngIf="p.via"> · via {{ p.via }}</span>
                 <span class="duree" *ngIf="p.duree"> · Durée {{ p.duree }}</span>
               </p>
               <p class="desc">{{ p.descriptionCourte }}</p>
@@ -40,8 +40,13 @@ import { Observable } from 'rxjs';
   `,
   styles: [`
     .list { display: flex; flex-direction: column; gap: 1rem; margin-top: .75rem; }
-    .card { display: grid; grid-template-columns: 220px 1fr auto; gap: 1rem; align-items: center; padding: 1rem; border: 1px solid var(--gray-medium); border-radius: .75rem; text-decoration: none; color: inherit; background: color-mix(in srgb, var(--accent) 3%, transparent); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    .card { display: grid; grid-template-columns: 220px 1fr auto; grid-template-areas: 'thumb content arrow'; gap: 1rem; align-items: center; padding: 1rem; border: 1px solid var(--gray-medium); border-radius: .75rem; text-decoration: none; color: inherit; background: color-mix(in srgb, var(--accent) 3%, transparent); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background-color .2s ease; }
+    .thumb { grid-area: thumb; }
+    .content { grid-area: content; }
+    .chevron { grid-area: arrow; justify-self: end; }
+        .card.important { border-color: color-mix(in srgb, var(--accent) 60%, var(--gray-medium)); background: color-mix(in srgb, var(--accent) 10%, transparent); box-shadow: 0 8px 22px rgba(0,191,166,0.16); }
     .card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.08); border-color: color-mix(in srgb, var(--accent) 35%, var(--gray-medium)); }
+        .card.important:hover { border-color: color-mix(in srgb, var(--accent) 70%, var(--gray-medium)); background: color-mix(in srgb, var(--accent) 12%, transparent); box-shadow: 0 12px 28px rgba(0,191,166,0.20); }
     .card:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent); }
     .thumb { width: 220px; height: 150px; object-fit: cover; border-radius: .5rem; border: 1px solid var(--gray-medium); }
     .title { margin: 0 0 .25rem; font-size: 22px; line-height: 1.35; font-family: 'Playfair Display', serif; }
@@ -49,13 +54,13 @@ import { Observable } from 'rxjs';
     .desc { margin: 0; }
     .tags { display:flex; flex-wrap:wrap; gap:.4rem; list-style:none; padding:0; margin:.5rem 0 0; }
     .tags li { padding:.25rem .5rem; border:1px solid var(--gray-medium); border-radius: 999px; font-size: .85rem; color: var(--text-secondary); }
-    .chevron { color: var(--accent); font-size: 1.25rem; padding: 0 .25rem; transition: transform .2s ease; }
+    .chevron { color: var(--accent); font-size: 1.25rem; padding: 0 .25rem; transition: transform .2s ease; justify-self: end; }
     .card:hover .chevron { transform: translateX(2px); }
     .muted { color: var(--text-secondary); }
 
     /* Responsive adjustments aligned with Presentation page */
     @media (max-width: 880px) {
-      .card { grid-template-columns: 180px 1fr auto; }
+      .card { grid-template-columns: 180px 1fr auto; grid-template-areas: 'thumb content arrow'; }
       .thumb { width: 180px; height: 120px; }
       .title { font-size: 20px; }
     }
