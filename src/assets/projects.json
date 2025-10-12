@@ -3,8 +3,8 @@
     "Titre": "TSP-Pipeline",
     "Client final": "SNCF",
     "Via": "Sopra Steria",
-    "DescriptionCourte": "Application centrale d’ingestion et de transformation de données télédiagnostic pour les besoins de maintenance prédictive des trains SNCF.",
-    "Description": "<p>Application d’ingestion et de transformation de données pour la maintenance des trains.</p><p>Rôle : lead technique, conception et mise en place sur AWS.</p>",
+    "DescriptionCourte": "Reprise et industrialisation d’une application centrale de traitement des données télédiagnostic pour la maintenance prédictive des trains SNCF.",
+    "Description": "<p>Projet stratégique de la SNCF visant à exploiter les données de télédiagnostic des trains pour la maintenance prédictive.</p><p>J’ai repris un projet existant dans un contexte technique et humain complexe pour le rendre fiable et industrialisé. En tant que <b>lead technique</b>, j’ai accompagné l’architecte dans la définition de l’architecture sur AWS, mis en place les <b>processus techniques</b>, introduit des <b>bonnes pratiques de développement</b> et structuré le <b>pipeline de tests et de déploiement</b>.</p><p>Résultat : passage d’un projet naissant peu testé à un projet <b>robuste, automatisé et en production</b>, utilisé à grande échelle pour la maintenance prédictive des trains.</p>",
     "Durée": "Depuis août 2024",
     "Technologies": ["Java", "Quarkus", "Angular", "AWS", "Terraform", "Kafka", "SQS"],
     "imageFile": "assets/images/projets/tsp-pipeline.jpg"
@@ -12,9 +12,9 @@
   {
     "Titre": "Egide",
     "Client final": "EDF",
-    "Via": null,
-    "DescriptionCourte": "Refonte d'une application desktop d'aide à la décision dans le domaine de la radioprotection pour EDF R&D.",
-    "Description": "<p>Refonte d’un outil d’aide à la décision en radioprotection.</p><p>Rôle : lead technique, échanges réguliers avec le métier. Déploiement dans un environnement AWS.</p>",
+    "Via": "CGI",
+    "DescriptionCourte": "Refonte d’un ancien outil desktop de radioprotection en une application web moderne, déployée sur AWS et accessible aux équipes EDF R&D.",
+    "Description": "<p>Refonte complète d’un ancien client lourd utilisé en centrale nucléaire, afin de le rendre accessible via une interface web moderne et intuitive.</p><p>En tant que <b>lead technique</b>, j’ai assuré la <b>responsabilité technique et le développement principal</b> du projet tout en occupant un rôle élargi : <b>analyse métier</b> auprès des utilisateurs, échanges directs avec les équipes en centrale et <b>pilotage technique</b> dans un contexte de forte autonomie.</p><p>J’ai participé à la <b>migration du cœur applicatif</b> vers une architecture moderne (Java 21, Spring Boot, Angular 17, AWS) et encadré une petite équipe de 2 à 3 développeurs. Le projet a abouti à un <b>déploiement d’une version bêta sur AWS</b> avant sa reprise par une nouvelle équipe interne.</p>",
     "Durée": "1 an et 8 mois",
     "Technologies": ["Java 21", "Spring Boot", "JHipster", "Angular 17", "TypeScript", "AWS", "Amazon ECS", "OpenID Connect (OIDC)"],
     "imageFile": "assets/images/projets/egide.jpg"
@@ -25,7 +25,7 @@
     "Via": null,
     "DescriptionCourte": "Projet de build visant à reconstruire une application centrale de communication entre les trains et le SI SNCF.",
     "Description": "<p>Application de communication entre les trains et le SI SNCF.</p><p>Rôle : lead technique, conception et accompagnement de l’équipe.</p>",
-    "Durée": "2 an et 6 mois",
+    "Durée": "2 ans et 6 mois",
     "Technologies": ["Java", "Spring WebFlux", "Spring Security", "Spring Cloud Config", "Kafka", "Hazelcast", "Java Réactif"],
     "imageFile": "assets/images/projets/train-connect.jpg"
   },
@@ -56,7 +56,7 @@
     "DescriptionCourte": "Site web de gestion et réservation pour plusieurs bars, intégrant pré-paiements, notifications et suivi des ateliers et événements.",
     "Description": "<p>Développement d’un <b>site web complet</b> de gestion et de réservation pour Carry Nation :</p><ul><li>Gestion des <b>réservations multi-sites</b> et <b>pré-paiements</b></li><li>Envoi de <b>notifications</b> par e-mail et SMS</li><li>Réservation d’<b>ateliers</b>, gestion du <b>livre de cave</b>, des <b>bons cadeaux</b> et des <b>listes de non-présentation</b></li></ul><p>Mise en place d’un <b>back-office</b> avec deux vues :</p><ul><li><b>Administrateur</b> : gestion des soirées et des réservations</li><li><b>Barman</b> : suivi de l’arrivée des invités et organisation de la mise en place</li></ul>",
     "Durée": "6 mois",
-    "Technologies": ["Java", "Angular", "PostgresSQL", "AWS", "Stripe", "Twilio", "SendGrid"],
+    "Technologies": ["Java", "Angular", "PostgreSQL", "AWS", "Stripe", "Twilio", "SendGrid"],
     "imageFile": "assets/images/projets/cocktail.jpg"
   },
   {

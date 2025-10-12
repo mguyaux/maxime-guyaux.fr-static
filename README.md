@@ -2,7 +2,7 @@
 
 ## Disclaimer
 Ce site à été généré à 99% par de l'IA, en quelques heures.
-Le code n'as pas forcément été reluet seules les détails sur mon CV ont été ajoutés (projets.json et technos.json).
+Le code n'as pas forcément été relu et seules les détails sur mon CV ont été ajoutés (projets.json et technos.json).
 L'idée de ce projet est d'avoir un site durable, facile à maintenir et acceptable visuellement.
 
 Site personnel (frontend only) construit avec Angular, prévu pour être déployé sur GitHub Pages.
