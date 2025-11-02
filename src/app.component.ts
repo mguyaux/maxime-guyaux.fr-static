@@ -16,7 +16,7 @@ import { NgIf } from '@angular/common';
         <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Présentation</a>
         <a routerLink="/projets" routerLinkActive="active" (click)="closeMenu()">Projets</a>
         <a routerLink="/technologies" routerLinkActive="active" (click)="closeMenu()">Technologies</a>
-        <a routerLink="/talks" routerLinkActive="active" (click)="closeMenu()">Talks</a>
+        <a routerLink="/ressources" routerLinkActive="active" (click)="closeMenu()">Ressources</a>
         <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
       </div>
 
@@ -48,7 +48,7 @@ import { NgIf } from '@angular/common';
         <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Présentation</a>
         <a routerLink="/projets" routerLinkActive="active" (click)="closeMenu()">Projets</a>
         <a routerLink="/technologies" routerLinkActive="active" (click)="closeMenu()">Technologies</a>
-        <a routerLink="/talks" routerLinkActive="active" (click)="closeMenu()">Talks</a>
+        <a routerLink="/ressources" routerLinkActive="active" (click)="closeMenu()">Ressources</a>
         <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
       </div>
     </nav>

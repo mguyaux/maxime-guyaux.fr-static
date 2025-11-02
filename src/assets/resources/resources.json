@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Bienvenue sur les ressources",
+    "summary": "Présentation de la section Ressources et de son fonctionnement.",
+    "date": "2025-10-26",
+    "file": "bienvenue.md"
+  },
+  {
+    "title": "Astuce Angular: composants standalone",
+    "summary": "Pourquoi et comment utiliser les composants standalone dans Angular.",
+    "date": "2024-09-15",
+    "file": "standalone-angular.md"
+  }
+]
