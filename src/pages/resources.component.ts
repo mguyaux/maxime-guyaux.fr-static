@@ -23,7 +23,7 @@ interface ResourceItem extends ResourceMeta {
     <section class="section">
       <h2>Ressources</h2>
       <p class="muted intro">
-        Une collection d’articles et de notes. Le contenu est chargé depuis des fichiers Markdown.
+        Une collection d’articles et de notes.
       </p>
 
       <div class="list">
