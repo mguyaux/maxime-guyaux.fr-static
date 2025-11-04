@@ -25,7 +25,8 @@ export class TechnologiesService {
         nom: t['Nom'],
         description: t['Description'],
         niveau: t['Niveau']
-      })))
+      }))),
+      map(techs => techs.sort((a, b) => b.niveau - a.niveau))
     );
   }
 }
