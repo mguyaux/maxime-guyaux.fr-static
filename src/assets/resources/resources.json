@@ -1,14 +1,26 @@
 [
   {
-    "title": "Bienvenue sur les ressources",
-    "summary": "Présentation de la section Ressources et de son fonctionnement.",
-    "date": "2025-10-26",
-    "file": "bienvenue.md"
+    "title": "Devoxx 2025",
+    "summary": "Ma selection de vidéos",
+    "date": "2025-11-04",
+    "file": "devoxx2025.md"
   },
   {
-    "title": "Astuce Angular: composants standalone",
-    "summary": "Pourquoi et comment utiliser les composants standalone dans Angular.",
-    "date": "2024-09-15",
-    "file": "standalone-angular.md"
+    "title": "Lyon JUG",
+    "summary": "",
+    "date": "2025-02-10",
+    "file": "lyonJUG.md"
+  },
+  {
+    "title": "Devoxx 2024",
+    "summary": "Ma selection de vidéos",
+    "date": "2024-09-24",
+    "file": "devoxx2024.md"
+  },
+  {
+    "title": "Blend Web Mix 2016",
+    "summary": "Participation et liens des vidéos",
+    "date": "2016-12-01",
+    "file": "bwm2016.md"
   }
 ]
